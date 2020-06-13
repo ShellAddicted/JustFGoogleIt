@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha256-aAr2Zpq8MZ+YA/D6JtRD3xtrwpEz2IqOS+pWD/7XKIw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Just the Fuck Google it</title>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row text-center">
+            <div class="col">
+                <a href="/"><img class="img-fluid" src="./img/main.jpg" /></a>
+            </div>
+        </div>
+
+        <div class="row text-right">
+            <div class="col-xl-4 col-md-8 text-center m-auto">
+                <form action="https://google.it/search" method="get">
+                    <div class="input-group mb-3 mt-3">
+                        <input id="SearchQuery" type="text" class="form-control" name="q" placeholder="Just fucking Google IT!">
+                        <div class="input-group-append">
+                            <button id="searchBtn" class="btn btn-primary" type="submit">
+                                Search
+                                <div class="d-none" id="searchCounter">
+                                    in <span id="searchSeconds"></span> seconds
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom">
+        <div class="container text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="https://google.com">
+                        Google does not endorse this site, and is not associated with it in any way whatsoever.
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/ShellAddicted/JustFGoogleIt">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
