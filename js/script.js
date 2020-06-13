@@ -4,7 +4,7 @@ window.onload = () => {
     let secondsLeft = 5;
     let counterHandle = 0;
 
-    searchQuery.value = window.location.pathname.slice(1).replace("+", " ");
+    searchQuery.value = decodeURIComponent(window.location.pathname.slice(1)).replace(/\+/g, " ");
     if (searchQuery.value != "") {
         let classlist = document.getElementById("searchCounter").classList;
         classlist.remove("d-none");
